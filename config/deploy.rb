@@ -33,6 +33,8 @@ deploy.task :restart, :roles => :app do
   # separate thin service with wrapper!
   # http://stackoverflow.com/questions/3230404/rvm-and-thin-root-vs-local-user
   #run "sudo service thin_s6 restart"
+  run "cd #{release_path}; sudo bundle install"
+  run "cd #{release_path}; RAILS_ENV=#{rails_env} sudo bundle exec rake assets:precompile"
   run "sudo service thin_rw stop"
   run "sleep 2"
   run "sudo service thin_rw start"
