@@ -10,8 +10,6 @@ Redwarrior::Application.routes.draw do
     match "about" => 'about#index', :as => :about
   end
 
-  match "/:locale/" => "about#index"
-
   #match "about" => 'about#index'
   #resources :products
 
