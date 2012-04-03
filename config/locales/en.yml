@@ -1,10 +1,10 @@
 en:
   current_locale_en: "English"
   current_locale_pl: "Polski"
-  services: Services
-  portfolio: Portfolio
+  services: "Services"
+  portfolio: "Portfolio"
   menu:
-    contact: Contact
+    contact: "Contact"
   contact:
     phones: "Phones"
     office: "Office"
