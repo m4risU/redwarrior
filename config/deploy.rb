@@ -9,7 +9,7 @@ set :deploy_to, "/srv/redwarrior.pl/"
 set :keep_releases, 5
 after "deploy:update", "deploy:cleanup"
 
-server "choirhouse.com", :app, :web, :db, :primary => true
+server "redwarrior.pl", :app, :web, :db, :primary => true
 set :rails_env, "production"
 set :user, "rails"
 
