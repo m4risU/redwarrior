@@ -1,0 +1,32 @@
+<% content_for :right_side do %>
+  <div class="well">
+    <div class="explanation">
+      <% ["amazon", "rails", "ruby", "mysql", "facebook", "jquery"].each do |elem| %>
+        <div id="services-<%= elem %>-sidebar">
+          <h2><%= t "#{elem}.title" %></h2>
+
+          <h3><%= t "#{elem}.first_header" %></h3>
+          <p><%= t "#{elem}.first_paragraph" %></p>
+
+          <h3><%= t "#{elem}.second_header" %></h3>
+          <p><%= t "#{elem}.second_paragraph" %></p>
+
+          <h3><%= t "#{elem}.third_header" %></h3>
+          <p><%= t "#{elem}.third_paragraph" %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<div class="span6 well">
+  <ul class="thumbnails" id="clickables">
+    <% ["amazon", "rails", "ruby", "mysql", "facebook", "jquery"].each do |elem| %>
+      <li id="services-<%= elem %>" class="span2 clickable" big-image="<%= image_path("#{elem}-big.png") %>" small-image="<%= image_path("#{elem}-small.png") %>">
+        <div class="thumbnail">
+          <a href="#"><img src="<%= image_path("#{elem}-small.png") %>" alt=""></a>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

@@ -1,0 +1,76 @@
+pl:
+  current_locale_en: "English"
+  current_locale_pl: "Polski"
+  services: Usługi
+  portfolio: Portfolio
+  menu:
+    contact: Kontakt
+  contact:
+    phones: "Phones"
+    office: "Biuro"
+    mobile: "Komórka"
+    address: "Adres"
+    email: "mariuszwyrozebski@gmail.com"
+  choirhouse:
+    header: "Choirhouse - platforma dla chórzystów"
+    description: "Współpraca i wspólne kontakty to podstawa życia chóralnego. Aplikacja umożliwia wzajemne kontakty i ćwiczenia nad materiałem."
+    about:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+  select6:
+    header: "Select6 - społeczne finansowanie projektów"
+    description: "Select6 pomage znaleźć potrzebne fundusze na rozpoczęcie własnego innowacyjnego projektu z pomocą sieci społecznościowych. Wyróżnia się ukierunkowaniem na mniejszości etniczne i wsparciem dla projektów spoza U.S."
+    about:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+  cowtrip:
+    header: "Cowtrip - serwis poświęcony dojeżdzającym do pracy."
+    description: "Cowtrip zwraca szczególną uwagę na koszt dojazdów do pracy i zachęca do szukania pracy bliżej miejsca zamieszkania."
+    about:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+  amazon:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+    first_header:
+    second_header:
+    third_header:
+  ruby:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+    first_header:
+    second_header:
+    third_header:
+  rails:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+    first_header:
+    second_header:
+    third_header:
+  mysql:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+    first_header:
+    second_header:
+    third_header:
+  jquery:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+    first_header:
+    second_header:
+    third_header:
+  facebook:
+    first_paragraph:
+    second_paragraph:
+    third_paragraph:
+    first_header:
+    second_header:
+    third_header:
