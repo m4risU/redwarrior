@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   before_filter :set_locale
-  before_filter :set_charset
+  #before_filter :set_charset
 
   def set_locale
     I18n.locale = session[:locale] || extract_locale_from_accept_language_header || I18n.default_locale
@@ -20,8 +20,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def set_charset
-    @headers["Content-Type"] = "text/html; charset=utf-8"
-  end
+  #def set_charset
+  #  @headers["Content-Type"] = "text/html; charset=utf-8"
+  #end
 
 end
