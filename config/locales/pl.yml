@@ -1,8 +1,8 @@
 pl:
   current_locale_en: "English"
   current_locale_pl: "Polski"
-  services: "Usługi"
   portfolio: "Portfolio"
+  services: 'Usługi'
   menu:
     contact: "Kontakt"
   contact:
