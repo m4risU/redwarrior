@@ -4,6 +4,28 @@
          :current_locale_pl => "Polski",
          :services => "Services",
          :portfolio => "Portfolio",
+         :about => {
+             :we_make_apps => "We make apps, websites and startups",
+             :we_make_apps_desc => "Without much sugar, we just make apps and we love it. That is simple. There is no reason to use overpumped words.
+                   We just know how to do it and we are eager to help your business running.",
+             :rails => "Ruby on Rails",
+             :rails_desc => "Yes, we use Ruby on Rails as our starting point. There is a lot that can be done with it, and it has no limits.
+                     It is efficient, cheap and its community is bright. It is just designed to make web applications.",
+             :payments => "Payment systems",
+             :payments_desc => "There is no question whether we can do it... We want to do it. If you earn money on the project it will be
+                     easier for us to build long lasting relationship. We do value it most of all.",
+             :social => "Social networking",
+             :social_desc => "Social awareness is today the only way to get your product to the top. We have tools to prepare you for it.",
+             :applications => "Application types",
+             :applications_desc => "Do you have special needs? You feel lacking of software? If it is just CMS you want we will put you to the
+                     right track, there is no need to build it from scratch, but if your needs are bigger and you are going to
+                     dominate the market with your vision, you need something better.",
+             :custom_dev => "Custom development",
+             :custom_dev_desc => "Yes, we are here for it. This is our main goal to bring innovation and creativity. Bring your needs and
+                     together we will find solutions. Reinventing the wheel is not our job, we do real business.",
+             :other_lang => "Why not other languages?",
+             :other_lang_desc => "We do not work on PHP or .NET. We just love Ruby. It lets us to be specialized, quicker, cheaper and still elastic."
+         },
          :menu => {
              :contact => "Contact"},
          :contact => {

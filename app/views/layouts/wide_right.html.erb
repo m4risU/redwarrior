@@ -59,14 +59,14 @@
           </div>
         <% end %>
         <div class="row-fluid">
-          <div class="span7">
+          <div class="span3">
+            <%= yield :right_side %>
+          </div>
+          <div class="span6">
             <%= yield %>
           </div>
-          <div class="span1">
+          <div class="span3">
             &nbsp;
-          </div>
-          <div class="span4">
-            <%= yield :right_side %>
           </div>
         </div>
       </div>
