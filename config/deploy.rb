@@ -35,7 +35,5 @@ deploy.task :restart, :roles => :app do
   #run "sudo service thin_s6 restart"
   run "cd #{release_path}; sudo bundle install"
   run "cd #{release_path}; RAILS_ENV=#{rails_env} sudo bundle exec rake assets:precompile"
-  run "sudo service thin_rw stop"
-  run "sleep 2"
-  run "sudo service thin_rw start"
+  run "sudo service thin_rw restart"
 end
