@@ -1,4 +1,10 @@
-<% content_for :right_side do %>
+<% content_for :map do %>
+  <div id="map-container-wide">
+    <iframe width="500" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=bielsko-bia%C5%82a,+partyzant%C3%B3w+44&amp;aq=&amp;sll=49.822377,19.058384&amp;sspn=0.396038,1.056747&amp;gl=pl&amp;ie=UTF8&amp;hq=&amp;hnear=Partyzant%C3%B3w+44,+Bielsko-Bia%C5%82a,+%C5%9Bl%C4%85skie&amp;ll=49.81488,19.043714&amp;spn=0.012378,0.033023&amp;t=m&amp;z=14&amp;output=embed"></iframe>
+  </div>
+<% end %>
+
+<div class="span4">
   <div class="well">
     <i class="icon-envelope"></i> <%= t "contact.phones" %>:
     <p>
@@ -6,6 +12,8 @@
       <%= t "contact.mobile" %>: +48 793 957 480
     </p>
   </div>
+</div>
+<div class="span4">
   <div class="well">
     <i class="icon-envelope"></i> <%= t "contact.address" %>:
     <p>
@@ -13,16 +21,19 @@
       43-300, Bielsko-Biała
     </p>
   </div>
+</div>
+<div class="span4">
   <div class="well">
     <i class="icon-envelope"></i> Email:
     <p>
       <%= mail_to t("contact.email"), t("contact.email"), :encode => :hex %>
     </p>
   </div>
-<% end %>
-
-
-
-<div class="well" id="map-container">
-  <iframe width="500" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=bielsko-bia%C5%82a,+partyzant%C3%B3w+44&amp;aq=&amp;sll=49.822377,19.058384&amp;sspn=0.396038,1.056747&amp;gl=pl&amp;ie=UTF8&amp;hq=&amp;hnear=Partyzant%C3%B3w+44,+Bielsko-Bia%C5%82a,+%C5%9Bl%C4%85skie&amp;ll=49.81488,19.043714&amp;spn=0.012378,0.033023&amp;t=m&amp;z=14&amp;output=embed"></iframe>
 </div>
+
+
+
+
+<!--<div class="well" id="map-container">-->
+<!--<iframe width="500" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=bielsko-bia%C5%82a,+partyzant%C3%B3w+44&amp;aq=&amp;sll=49.822377,19.058384&amp;sspn=0.396038,1.056747&amp;gl=pl&amp;ie=UTF8&amp;hq=&amp;hnear=Partyzant%C3%B3w+44,+Bielsko-Bia%C5%82a,+%C5%9Bl%C4%85skie&amp;ll=49.81488,19.043714&amp;spn=0.012378,0.033023&amp;t=m&amp;z=14&amp;output=embed"></iframe>-->
+<!--</div>-->

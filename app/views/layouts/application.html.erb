@@ -37,21 +37,25 @@
   </div>
 </div>
 
+<%= yield :map %>
+
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span2">
-      <div class="well sidebar-nav">
-        <ul class="nav nav-list">
-          <!--<li class="nav-header">Sidebar</li>-->
-          <li><%= link_to t("services"), services_path %></li>
-          <li><%= link_to t("portfolio"), portfolio_path %></li>
-          <li><%= link_to t("menu.contact"), contact_path %></li>
-        </ul>
+    <% unless @hide_side_menu %>
+      <div class="span2">
+        <div class="well sidebar-nav">
+          <ul class="nav nav-list">
+            <!--<li class="nav-header">Sidebar</li>-->
+            <li><%= link_to t("services"), services_path %></li>
+            <li><%= link_to t("portfolio"), portfolio_path %></li>
+            <li><%= link_to t("menu.contact"), contact_path %></li>
+          </ul>
+        </div>
+        <!--/.well -->
       </div>
-      <!--/.well -->
-    </div>
+    <% end %>
     <!--/span-->
-    <div class="span10">
+    <div class="<%= @hide_side_menu ? "span12" : "span10" %>">
       <div class="container-fluid">
         <% flash.each do |name, msg| %>
           <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
@@ -60,12 +64,19 @@
           </div>
         <% end %>
         <div class="row-fluid">
-          <div class="span9">
-            <%= yield %>
-          </div>
-          <div class="span3">
-            <%= yield :right_side %>
-          </div>
+          <% unless @hide_side_menu %>
+            <div class="span9">
+              <%= yield %>
+            </div>
+            <div class="span3">
+              <%= yield :right_side %>
+            </div>
+          <% else %>
+            <div class="span12">
+              <%= yield %>
+            </div>
+          <% end %>
+
         </div>
       </div>
     </div>

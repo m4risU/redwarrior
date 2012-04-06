@@ -1,5 +1,5 @@
 jQuery ->
-  $("#map-container iframe").width($("#map-container").width())
+  $("#map-container-wide iframe").width($("body").width())
 
   $(window).on 'resize', ->
-    $("#map-container iframe").width($("#map-container").width())
+    $("#map-container-wide iframe").width($("body").width())

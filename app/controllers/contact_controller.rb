@@ -1,5 +1,6 @@
 class ContactController < ApplicationController
-  def index
 
+  def index
+    @hide_side_menu = true
   end
 end
