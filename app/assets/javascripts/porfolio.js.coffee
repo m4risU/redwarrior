@@ -1,14 +1,8 @@
+
 jQuery ->
-  $('#myCarousel').carousel()
-  showSidebar()
+$('.explanation').children().hide()
+$('.clickable').on 'click', ->
+    $('.explanation').children().stop(true,true).slideUp(500)
+    $('#' + $(this).attr('id') + "-sidebar").stop(true,true).slideDown(500)
 
-  $('#myCarousel').on 'slide', ->
-    $('.explanation').fadeOut()
 
-  $('#myCarousel').on 'slid', ->
-    showSidebar()
-
-showSidebar = ->
-  $('.explanation').fadeIn()
-  $('.explanation div').hide()
-  $("#" + $('.carousel .active').attr('id') + "_sidebar").show()

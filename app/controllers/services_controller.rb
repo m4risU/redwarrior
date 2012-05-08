@@ -1,5 +1,5 @@
 class ServicesController < ApplicationController
-  layout "wide_right"
+  layout "without_right"
 
   def index
 

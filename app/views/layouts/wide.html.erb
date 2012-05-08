@@ -40,21 +40,17 @@
     </div>
   </div>
 
-  <div id="warrior-up-side-down"></div>
-  <div id="dots-sw"></div>
+  <div id="wide-wraper">
+    <%= yield :map %>
+  </div>
 
-  <div class="container-fluid mid-outer">
-    <div class="row-fluid">
-      <div class="container mid">
-        <div class="container-fluid">
-
-            <%= yield %>
-        </div>
-      </div>
+  <div class="container">
+    <div class="row">
+        <%= yield %>
     </div>
   </div>
 
-  <div id="content" class="container">
+  <div class="container">
     <div>
     <% flash.each do |name, msg| %>
         <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
@@ -63,11 +59,9 @@
         </div>
     <% end %>
 
-    <%= yield :content %>
     <%= render :partial => "layouts/shared/footer" %>
   </div>
   </div>
-  <div id="content-bottom" class="container"></div>
 
 </div>
 <!-- /container -->

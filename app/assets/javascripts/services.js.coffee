@@ -1,3 +1,4 @@
+###
 jQuery ->
   emphasize($('#clickables').children().first().attr('id'))
   $('.clickable').on 'click', ->
@@ -19,3 +20,12 @@ showSidebar = (elem) ->
   $('.explanation').fadeIn()
   $('.explanation div').hide()
   $("#" + elem.attr('id') + "-sidebar").show()
+###
+
+jQuery ->
+  $('.clickable').on 'click', ->
+    $('.explanation').children().stop(true,true).slideUp(500)
+    $('#' + $(this).attr('id') + "-sidebar").stop(true,true).slideDown(500)
+
+
+

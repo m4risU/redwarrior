@@ -1,39 +1,34 @@
-<% content_for :right_side do %>
-  <div class="well">
+<% content_for :content do %>
     <div class="explanation">
       <% ["choirhouse", "select6", "cowtrip"].each do |project| %>
-        <div id="<%= project %>_sidebar">
-          <h3><%= t "#{project}.about" %></h3>
+        <div id="<%= project %>-sidebar">
+          <h2><%= t "#{project}.header" %></h2>
+          <p><%= t "#{project}.description" %></p>
 
+          <h2><%= t "#{project}.about" %></h2>
           <p><%= t "#{project}.first_paragraph" %></p>
-
           <p><%= t "#{project}.second_paragraph" %></p>
-
           <p><%= t "#{project}.third_paragraph" %></p>
         </div>
       <% end %>
     </div>
-  </div>
 <% end %>
 
+<div id="clickables">
+  <% [["choirhouse", "select6", "cowtrip"]].each do |project_list| %> <!-- put them in threes-->
+      <ul class="row thumbnails">
+        <% project_list.each do |project| %>
+            <li id="<%= project %>" class="clickable" %>
+              <div class="thumbnail">
+                <a href="#"><img src="<%= image_path("#{project}.png") %>" alt=""></a>
+
+                <p><%= t "#{project}.header" %></p>
 
 
-<div id="myCarousel" class="carousel slide">
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <% ["choirhouse", "select6", "cowtrip"].each_with_index do |project, index| %>
-      <div id="<%= project %>" class="item <%= "active" if index == 0 %>">
-        <%= image_tag "#{project}.png" %>                            l
+              </div>
+            </li>
+        <% end %>
+      </ul>
+  <% end %>
 
-        <div class="carousel-caption">
-          <h4><%= t "#{project}.header" %></h4>
-
-          <p><%= t "#{project}.description" %></p>
-        </div>
-      </div>
-    <% end %>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>

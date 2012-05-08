@@ -11,3 +11,205 @@
  *= require_self
  *= require_tree .
 */
+
+body {
+ /*   background: #fff url('/assets/bg.png') !important;  */
+    background: #eeeeec url('/assets/dots-light-vert.png') repeat-x !important;
+    overflow-y:scroll;
+}
+
+#brand-slogan {
+    height: 108px;
+    width: 400px;
+    mergin: 0;
+    background: url('/assets/top-logo-bg.png') bottom no-repeat !important;
+    float: left;
+}
+
+#brand {
+    color: #eee;
+    font-weight: bold;
+    font-size: 36px;
+    display: block;
+    border-bottom: 1px white solid;
+    padding: 20px 0px 8px 0;
+    margin: 10px 20px 0 20px;
+}
+
+a#brand:hover {
+    text-decoration: none;
+}
+
+#slogan {
+    color: #eee;
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    margin: 0 20px;
+
+}
+
+.red {
+    color: #a40000;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.navbar-inner{
+    background: url('/assets/top-bg.png') !important;
+}
+
+#main-menu {
+    background: url('/assets/top-bg.png') !important;
+}
+#main-menu li a {
+    height: 28px;
+    padding: 40px;
+    background: url('/assets/top-bg.png') repeat-x !important;
+    color: #ccc;
+}
+#main-menu li a:hover {
+    background: url('/assets/top-menu-hover.png') repeat-x !important;
+    color: #fff;
+}
+
+#lang-menu{
+    padding: 30px;
+}
+
+.navbar-fixed-top{
+    -webkit-box-shadow: 0px 0px 8px 8px rgba(9, 9, 9, 0.5);
+    box-shadow: 0px 0px 8px 8px rgba(9, 9, 9, 0.5);
+    border-bottom: 1px solid #ccc;
+}
+
+.mid-outer {
+    background: url('/assets/mid-side-bg.png') repeat-x !important;
+    height: 399px !important;
+    -webkit-box-shadow: 0px 0px 8px 8px rgba(9, 9, 9, 0.5);
+    box-shadow: 0px 0px 8px 8px rgba(9, 9, 9, 0.5);
+
+    border-bottom: 1px #ccc solid;
+}
+
+.mid {
+    background: url('/assets/mid-bg.png') repeat-x !important;
+    height: 399px !important;
+    width: 699px !important;
+    overflow: hidden;  /* tmp */
+}
+
+#dots-sw {
+    height: 223px;
+    width: 228px;
+    position: absolute;
+    background: url('/assets/dots-dark-sw.png') no-repeat !important;
+}
+
+#warrior-up-side-down {
+    height: 96px;
+    width: 80px;
+    background: url('warrior-up-side-down.png') no-repeat;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+#content {
+    position:relative;
+    z-index: -100;
+    width: 928px;
+    background: url('/assets/content-bg.png') repeat-y !important;
+    margin-bottom: 0;
+}
+
+#content div {
+    padding: 10px 30px;
+}
+#content-bottom {
+    width: 928px;
+    height: 46px;
+    background: url('/assets/content-bottom.png') repeat-y !important;
+}
+
+footer {
+    background: url('/assets/cr.png') repeat-y !important;
+    color: #eee;
+    height: 72px;
+    width: 222px;
+    float: right;
+    margin: 20px 30px 0 20px;
+}
+footer p {
+    text-align: center;
+    padding: 28px 0;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #a40000 !important;
+}
+
+.carousel-control {
+    margin-top:50px;
+}
+
+.carousel-inner {
+    height: 400px;
+    width: 540px !important;
+    margin: 40px auto;
+}
+
+.carousel-inner .item img {
+    display: block;
+    position: absolute;
+}
+
+.carousel-desc {
+    text-align: right;
+    margin: 30px 20px 0 0;
+    width: 220px;
+    float: right;
+}
+
+/* SERVICES & PORTFOLIO */
+#clickables {
+    margin: 60px auto 0 auto;
+    width: 590px;
+}
+#clickables.row {
+    margin: 20px auto 0 auto !important;
+}
+
+#clickables.clickable {
+    width: 180px !important;
+    text-align: center;
+    margin: 10px;
+    float: left;
+}
+
+.thumbnail {
+    width: 165px;
+    cursor: pointer;
+}
+
+.thumbnail img {   /* portfolio images */
+    width: 165px;
+    margin: 0px;
+}
+
+.thumbnail p {
+    text-align: center;
+}
+
+/* wide layout */
+#wide-wraper     {
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+
+    -webkit-box-shadow: 0px 0px 6px 6px rgba(9, 9, 9, 0.5);
+    box-shadow: 0px 0px 6px 6px rgba(9, 9, 9, 0.5);
+
+}
