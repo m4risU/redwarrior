@@ -28,7 +28,9 @@
             :office => "Biuro",
             :mobile => "Komórka",
             :address => "Adres",
-            :email => "mariuszwyrozebski@gmail.com"
+            :email => "mariuszwyrozebski@gmail.com",
+            :to_get_a_quote => "Aby skontaktować się w sprawie wyceny projektu wyślij email pod adres",
+            :to_email => ""
         },
         :choirhouse => {
             :header => "Choirhouse - platforma dla chórzystów",

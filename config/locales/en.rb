@@ -33,7 +33,9 @@
              :office => "Office",
              :mobile => "Mobile",
              :address => "Address",
-             :email => "mariuszwyrozebski@gmail.com"},
+             :email => "mariuszwyrozebski@gmail.com",
+             :to_get_a_quote => "To get a quote on a project contact",
+             :to_email => "with an email message."},
          :choirhouse => {
              :header => "Choirhouse - social camp for choir singers",
              :description => "Socializing and getting know each other is most important in being a choir member. This app helps people communicate and share training materials.",
