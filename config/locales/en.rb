@@ -2,7 +2,7 @@
      {
          :current_locale_en => "English",
          :current_locale_pl => "Polski",
-         :services => "Services",
+         :technologies => "Technologies",
          :portfolio => "Portfolio",
          :about => {
              :we_make_apps => "We make apps, websites and startups",
