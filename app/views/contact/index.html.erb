@@ -7,15 +7,15 @@
 <% content_for :content do %>
   <div class="row">
     <div class="span4">
-      <h2>About us</h2>
+      <h2><%= t "about_us" %></h2>
 
       <p>
         <strong>Red Warrior Studio</strong>
-        is an european office of the <%= link_to "Bytelion.com", "http://bytelion.com" %> company.
-        Operates in EU timezone but works mostly with U.S. based clients.
+        <%= raw t "contact.is_european_branch", :link => (link_to "Bytelion.com", "http://bytelion.com") %>.
+        <%= t "contact.operates" %>
       </p>
 
-      <h3>Contact</h3>
+      <h3><%= t "menu.contact" %></h3>
 
       <p>
         <%= t "contact.to_get_a_quote" %> <%= mail_to t("contact.email"), t("contact.email"), :encode => :hex %> <%= t "contact.to_email" %>
@@ -23,7 +23,7 @@
     </div>
     <div class="span3">
       <p>
-        <h3>Here is out detailed address:</h3>
+        <h3><%= t "contact.detailed_address" %></h3>
         <br/>
         <br/>
         <i class="icon-envelope"></i> <%= t "contact.address" %>: <br/>

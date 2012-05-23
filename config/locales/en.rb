@@ -35,7 +35,10 @@
              :address => "Address",
              :email => "mariuszwyrozebski@gmail.com",
              :to_get_a_quote => "To get a quote on a project contact",
-             :to_email => "with an email message."},
+             :to_email => "with an email message.",
+             :is_european_branch => "is an european office of the %{link} company",
+             :operates => "Operates in EU timezone but works mostly with U.S. based clients.",
+             :detailed_address => "Here is out detailed address:"},
          :choirhouse => {
              :header => "Choirhouse - social camp for choir singers",
              :description => "Socializing and getting know each other is most important in being a choir member. This app helps people communicate and share training materials.",
@@ -105,6 +108,7 @@
              :second_paragraph => "Facebook currency is popular within a lot of games. It is perfect to pay for virtual items in facebook games.",
              :third_header => "",
              :third_paragraph => ""
-         }
+         },
+         :about_us => "About us"
      }
 }
