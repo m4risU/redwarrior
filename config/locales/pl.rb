@@ -19,7 +19,7 @@
             :other_lang => "Czemu nie inny język?",
             :other_lang_desc => "Nie piszemy w PHP ani .NET. Po prostu kochamy Ruby. Stawiamy przede wszystkim na jakość, czytelność i efekt. Z narzędziami jakie mamy możemy to osiągnąć, jeśli zmienimy narzędzia nie zadowolimy naszych klientów."
         },
-        :services => "Usługi",
+        :technologies => "Technologie",
         :menu => {
             :contact => "Kontakt"
         },
@@ -28,7 +28,12 @@
             :office => "Biuro",
             :mobile => "Komórka",
             :address => "Adres",
-            :email => "mariuszwyrozebski@gmail.com"
+            :email => "mariuszwyrozebski@gmail.com",
+            :to_get_a_quote => "Aby skontaktować się w sprawie wyceny projektu wyślij email pod adres",
+            :to_email => "",
+            :is_european_branch => "jest europejską częścią %{link}",
+            :operates => "Wspólpracuje w większości z klientami znajdującymi się w Stanach zjednoczonych.",
+            :detailed_address => "Dokładny adres:"
         },
         :choirhouse => {
             :header => "Choirhouse - platforma dla chórzystów",
@@ -103,6 +108,7 @@
             :second_paragraph => "Facebook dostarcza między innymi mechanizm płatności, który można wykorzystać na przykład do sprzedaży wirtualnych przedmiotów w grach.",
             :third_header => "",
             :third_paragraph => ""
-        }
+        },
+        :about_us => "O firmie"
     }
 }

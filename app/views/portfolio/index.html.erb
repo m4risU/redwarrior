@@ -9,6 +9,8 @@
           <p><%= t "#{project}.first_paragraph" %></p>
           <p><%= t "#{project}.second_paragraph" %></p>
           <p><%= t "#{project}.third_paragraph" %></p>
+
+          <%= render :partial => "projects/#{project}_#{I18n.locale}" rescue nil %>
         </div>
       <% end %>
     </div>

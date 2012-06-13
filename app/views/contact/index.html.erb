@@ -4,36 +4,35 @@
   </div>
 <% end %>
 
-<div class="span4">
-  <div class="well">
-    <i class="icon-envelope"></i> <%= t "contact.phones" %>:
-    <p>
-      <%= t "contact.office" %>: +48 33 497 58 23<br/>
-      <%= t "contact.mobile" %>: +48 793 957 480
-    </p>
+<% content_for :content do %>
+  <div class="row">
+    <div class="span4">
+      <h2><%= t "about_us" %></h2>
+
+      <p>
+        <strong>Red Warrior Studio</strong>
+        <%= raw t "contact.is_european_branch", :link => (link_to "Bytelion.com", "http://bytelion.com") %>.
+        <%= t "contact.operates" %>
+      </p>
+
+      <h3><%= t "menu.contact" %></h3>
+
+      <p>
+        <%= t "contact.to_get_a_quote" %> <%= mail_to t("contact.email"), t("contact.email"), :encode => :hex %> <%= t "contact.to_email" %>
+      </p>
+    </div>
+    <div class="span3">
+      <p>
+        <h3><%= t "contact.detailed_address" %></h3>
+        <br/>
+        <br/>
+        <i class="icon-envelope"></i> <%= t "contact.address" %>: <br/>
+        ul. Partyzantów 44<br/>
+        43-300, Bielsko-Biała<br/>
+        <%= t "contact.office" %>: +48 33 497 58 23<br/>
+        <%= t "contact.mobile" %>: +48 793 957 480
+      </p>
+    </div>
   </div>
-</div>
-<div class="span4">
-  <div class="well">
-    <i class="icon-envelope"></i> <%= t "contact.address" %>:
-    <p>
-      ul. Partyzantów 44<br/>
-      43-300, Bielsko-Biała
-    </p>
-  </div>
-</div>
-<div class="span4">
-  <div class="well">
-    <i class="icon-envelope"></i> Email:
-    <p>
-      <%= mail_to t("contact.email"), t("contact.email"), :encode => :hex %>
-    </p>
-  </div>
-</div>
+<% end %>
 
-
-
-
-<!--<div class="well" id="map-container">-->
-<!--<iframe width="500" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=bielsko-bia%C5%82a,+partyzant%C3%B3w+44&amp;aq=&amp;sll=49.822377,19.058384&amp;sspn=0.396038,1.056747&amp;gl=pl&amp;ie=UTF8&amp;hq=&amp;hnear=Partyzant%C3%B3w+44,+Bielsko-Bia%C5%82a,+%C5%9Bl%C4%85skie&amp;ll=49.81488,19.043714&amp;spn=0.012378,0.033023&amp;t=m&amp;z=14&amp;output=embed"></iframe>-->
-<!--</div>-->
