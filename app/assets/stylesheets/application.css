@@ -13,7 +13,7 @@
 */
 
 body {
- /*   background: #fff url('/assets/bg.png') !important;  */
+    /*   background: #fff url('/assets/bg.png') !important;  */
     background: #eeeeec url('/assets/dots-light-vert.png') repeat-x !important;
     overflow-y:scroll;
 }
