@@ -45,3 +45,6 @@ gem 'simple_form'
 
 # cms
 gem 'activeadmin'
+gem 'tinymce-rails'
+gem 'devise'
+gem 'friendly_id'
