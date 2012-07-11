@@ -3,8 +3,19 @@
 <ul class="posts_list">
 <% @posts.each do |post| %>
   <li>
-    <h2> <%= link_to post.title, post %> </h2>
-    <span class="date"> <%= post.created_at %> </span>
+
+    <div class="blog_header">
+      <h2> <%= link_to post.title, post %> </h2>
+      <span class="date"> <%= post.created_at %> </span>
+      <div class="blog_info">
+        <span class="comments_no"> Commnets: <%= post.comments.count %> </span>
+        <span class="by"> Author: <%= post.author %> </span>
+      </div>
+    </div>
+
+    <p><%= truncate( strip_tags(post.content), :length => 500,  :separator => ' ') %>
+        <span class="more"><%= link_to "read more...", post %> </span>
+    </p>
   </li>
 <% end -%>
 </ul>

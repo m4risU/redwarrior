@@ -5,8 +5,6 @@ Redwarrior::Application.routes.draw do
 
   # get "posts/index"
   # get "posts/show"
-  match "posts" => "posts#index"
-  match "posts/:id" => "posts#show", :as => :post
 
   root :to => "about#index"
 
@@ -17,6 +15,9 @@ Redwarrior::Application.routes.draw do
     match "contact" => 'contact#index', :as => :contact
     match "portfolio" => 'portfolio#index', :as => :portfolio
     match "about" => 'about#index', :as => :about
+    resources :posts, :only => [:index, :show] do
+      resources :comments
+    end
   end
 
   #match "about" => 'about#index'

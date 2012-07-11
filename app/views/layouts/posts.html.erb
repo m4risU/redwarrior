@@ -19,51 +19,23 @@
   <!--<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">-->
   <%= render :partial => "layouts/shared/header" %>
 </head>
-<body>
+<body class="posts_body">
 
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container-fluid">
-      <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <a class="brand" href="/">Red Warrior</a>
+  <%= render :partial => "layouts/shared/navbar" %>
 
-      <%= render "layouts/shared/horizontal_menu" %>
-      <!--/.nav-collapse -->
-    </div>
-  </div>
-</div>
+<div class="container blog">
 
-<div class="container-fluid blog">
 
-  <% flash.each do |name, msg| %>
-    <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
-      <a class="close" data-dismiss="alert">×</a>
-      <%= msg %>
-    </div>
-  <% end %>
-
-  <div class="row-fluid">
-
-    <div class="span2">
-      <div class="well sidebar-nav">
-        <ul class="nav nav-list">
-          <!--<li class="nav-header">Sidebar</li>-->
-          months goes here
-        </ul>
-      </div> <!--/.well -->
-    </div> <!--/span2-->
-
-    <div class="span10 content">
-      <div class="container-fluid">
-        <div class="row-fluid">
-          <div class="span10">
-            <%= yield %>
-          </div>
+  <div class="row">
+    <div class="span12">
+      <div class="content">
+      <% flash.each do |name, msg| %>
+        <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+          <a class="close" data-dismiss="alert">×</a>
+          <%= msg %>
         </div>
+      <% end %>
+      <%= yield %>
       </div>
     </div>
   </div>
@@ -74,8 +46,6 @@
 </div>
 <!-- /container -->
 
-<!-- Le javascript
-================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <%= javascript_include_tag "application" %>
 

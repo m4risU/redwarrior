@@ -4,7 +4,28 @@
 
 @import "mixins";
 
-.blog {
+.blog h1 {
+  border-bottom: 1px solid gray;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 0 white;
+  color: #333;
+  padding-bottom: 0.5em;
+}
+
+.post h3 {
+  border-bottom: 1px solid gray;
+  margin-bottom: 1em;
+  text-shadow: 0 1px 0 white;
+  color: #333;
+  padding-bottom: 0.5em;
+}
+
+.blog h2 a {
+  color: #a40000;
+}
+
+.blog h2 a:hover {
+  color: #c42020;
 }
 
 .blog .sidebar-nav {
@@ -13,11 +34,121 @@
 
 .blog .content {
   padding: 80px 0;
-  margin: 0 auto !important;
   @include gradient(#ededed, #fff);
   box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+  border-radius: 6px;
+}
+.blog .content p {
+  font-size: 1.3em;
+  padding: 1em 1em 0.5em 0;
 }
 
 .posts_list {
   list-style: none;
 }
+
+.posts_body {
+  background: url("/assets/dots-light-vert.png") repeat-x fixed 0 -120px #EEEEEC !important;
+}
+
+.blog .content {
+   padding: 70px 50px;
+}
+
+.posts_list li {
+  padding-bottom: 2em;
+}
+
+.blog .date {
+  color: gray;
+}
+
+.blog .by,
+.blog .comments_no,
+.blog .more {
+  color: gray;
+  text-align: right;
+  display: block;
+}
+
+.posts_list p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.post h1 {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 2em;
+}
+
+.post .date {
+  border-bottom: 1px solid gray;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 0 white;
+  padding-bottom: 0.5em;
+  font-size: 0.8em;
+}
+
+.blog_header {
+  position: relative;
+}
+
+.blog_info {
+  position: absolute;
+  top: 0.9em;
+  right: 0.5em;
+}
+
+.post .comments {
+  margin-left: 20px;
+  padding-left: 0;
+  list-style: none;
+  color: #555;
+}
+
+
+.post .comments li {
+  padding-bottom: 3em;
+
+}
+
+.add_comment textarea,
+.add_comment input {
+  width: 280px;
+}
+
+.add_comment textarea {
+  height: 100px;
+}
+
+.comment_date {
+  color: gray;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.comment_by {
+  font-weight: bold;
+}
+
+.post {
+}
+
+.comment-error-form {
+  width: 580px;
+  margin: 0 auto;
+}
+
+.comment-error-form input,
+.comment-error-form textarea {
+  width: 580px;
+}
+
+
+.comment-error-form label {
+  margin: 0; padding: 0;
+}
+
+.comment-error-form textarea { height: 100px; }

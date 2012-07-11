@@ -1,9 +1,46 @@
-<div class="main">
+<div class="post row">
 
+<div class="span8">
   <h1><%= @post.title %></h1>
+  <div class="date"> <%= @post.created_at %> </div>
 
   <%= raw @post.content %>
 
-  <div class="author"> <%= @post.author %> </div>
+  <div class="by"> <%= @post.author %> </div>
 
+
+
+</div>
+<div class="span3 comments">
+
+  <% if @comments.any? %>
+  <h3> Commments </h3>
+  <ul class="comments">
+    <% @comments.each do |comment| %>
+      <li>
+        <div class="comment_by"><%= comment.author %></div>
+        <div class="comment_date"> <%= comment.created_at %></div>
+        <%= comment.content %>
+      </li>
+    <% end -%>
+  </ul>
+  <% end -%>
+
+  <div class="add_comment">
+    <h3> Add commment </h3>
+    <%= form_for :comment, :url => post_comments_path(@post) do |f| %>
+      <p>
+        <%= f.label :author, "Author" %><br />
+        <%= f.text_field :author %><br />
+        <%= f.label :content, "Comment Description" %><br />
+        <%= f.text_area :content %>
+      </p>
+      <p>
+        <%= f.submit "Add Comment" %>
+      </p>
+    <% end %>
+  </div>
+
+
+</div>
 </div>

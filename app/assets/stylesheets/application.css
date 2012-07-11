@@ -8,8 +8,8 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require bootstrap_and_overrides
+ *= require_self
  *= require posts
 */
 
@@ -17,7 +17,12 @@ body {
     /*   background: #fff url('/assets/bg.png') !important;  */
     background: #eeeeec url('/assets/dots-light-vert.png') repeat-x !important;
     overflow-y:scroll;
+    z-index: -2;
 }
+
+
+a { color: #a40000; }
+a:hover { color: #c42020; }
 
 #brand-slogan {
     height: 108px;
@@ -35,6 +40,7 @@ body {
     border-bottom: 1px white solid;
     padding: 20px 0px 8px 0;
     margin: 10px 20px 0 20px;
+    text-shadow: 0 2px 0 black;
 }
 
 a#brand:hover {
@@ -70,6 +76,7 @@ a#brand:hover {
     padding: 40px;
     background: url('/assets/top-bg.png') repeat-x !important;
     color: #ccc;
+    text-shadow: 0 1px 0 black;
 }
 #main-menu li a:hover {
     background: url('/assets/top-menu-hover.png') repeat-x !important;
@@ -93,6 +100,8 @@ a#brand:hover {
     box-shadow: 0px 0px 8px 8px rgba(9, 9, 9, 0.5);
 
     border-bottom: 1px #ccc solid;
+    position: relative;
+    z-index: 3;
 }
 
 .mid {
@@ -120,7 +129,7 @@ a#brand:hover {
 
 #content {
     position:relative;
-    z-index: -100;
+    z-index: 1;
     width: 928px;
     background: url('/assets/content-bg.png') repeat-y !important;
     margin-bottom: 0;
@@ -211,5 +220,7 @@ footer p {
 
     -webkit-box-shadow: 0px 0px 6px 6px rgba(9, 9, 9, 0.5);
     box-shadow: 0px 0px 6px 6px rgba(9, 9, 9, 0.5);
+    position: relative;
+    z-index: 3;
 
 }

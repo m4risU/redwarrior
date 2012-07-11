@@ -25,23 +25,8 @@
 <body>
 
 <div id="wraper">
-  <div class="navbar navbar-fixed-top">
-    <div id="brand-slogan">
-      <a id="brand" href="/"><span class="red">Red</span>Warrior</a>
-      <span id="slogan">apps, websites and startups</span>
-    </div>
-    <div class="navbar-inner">
-      <div class="container-fluid">
-        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <%= render "layouts/shared/horizontal_menu" %>
-        <!--/.nav-collapse -->
-      </div>
-    </div>
-  </div>
+
+  <%= render :partial => "layouts/shared/navbar" %>
 
   <div id="warrior-up-side-down"></div>
   <div id="dots-sw"></div>
