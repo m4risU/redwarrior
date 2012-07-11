@@ -1,0 +1,26 @@
+@mixin gradient($color_top, $color_bottom) {
+  background: $color_top; /* Old browsers */
+  background: -moz-linear-gradient(top, $color_top 0%, $color_bottom 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color_top), color-stop(100%,$color_bottom)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $color_top 0%,$color_bottom 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $color_top 0%,$color_bottom 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $color_top 0%,$color_bottom 100%); /* IE10+ */
+  background: linear-gradient(top, $color_top 0%,$color_bottom 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color_top}', endColorstr='#{$color_bottom}',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin transition($property, $ms, $function) {
+  -webkit-transition: $property $ms $function;
+  -moz-transition: $property $ms $function;
+  -ms-transition: $property $ms $function;
+  -o-transition: $property $ms $function;
+  transition: $property $ms $function;
+}
+
+@mixin transform($scale, $rot, $gx, $gy, $sx, $sy) {
+  -moz-transform: scale($scale) rotate($rot) translate($gx, $gy) skew($sx, $sy);
+  -webkit-transform: scale($scale) rotate($rot) translate($gx, $gy) skew($sx, $sy);
+  -o-transform: scale($scale) rotate($rot) translate($gx, $gy) skew($sx, $sy);
+  -ms-transform: scale($scale) rotate($rot) translate($gx, $gy) skew($sx, $sy);
+  transform: scale($scale) rotate($rot) translate($gx, $gy) skew($sx, $sy);
+}

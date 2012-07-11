@@ -42,3 +42,6 @@ gem 'thin'
 # gem 'ruby-debug'
 
 gem 'simple_form'
+
+# cms
+gem 'activeadmin'

@@ -1,0 +1,23 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "mixins";
+
+.blog {
+}
+
+.blog .sidebar-nav {
+  margin-top: 20px;
+}
+
+.blog .content {
+  padding: 80px 0;
+  margin: 0 auto !important;
+  @include gradient(#ededed, #fff);
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.posts_list {
+  list-style: none;
+}
