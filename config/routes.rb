@@ -23,4 +23,7 @@ Redwarrior::Application.routes.draw do
   #match "about" => 'about#index'
   #resources :products
 
+  mount BlogEngine::Engine, :at => "/blog"
+
+
 end

@@ -131,4 +131,7 @@ ActiveAdmin.setup do |config|
     I18n.locale = 'en'
   end
 
+
+  config.load_paths << "#{BlogEngine::Engine.root}/lib/blog_engine/admin/"
+
 end

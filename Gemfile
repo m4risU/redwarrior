@@ -48,3 +48,9 @@ gem 'activeadmin'
 gem 'tinymce-rails'
 gem 'devise'
 gem 'friendly_id'
+
+# blog_engine
+
+gem 'blog_engine', :path => "../blog_engine/"
+
+gem 'carrierwave'

@@ -20,7 +20,6 @@ body {
     z-index: -2;
 }
 
-
 a { color: #a40000; }
 a:hover { color: #c42020; }
 
@@ -41,6 +40,12 @@ a:hover { color: #c42020; }
     padding: 20px 0px 8px 0;
     margin: 10px 20px 0 20px;
     text-shadow: 0 2px 0 black;
+}
+
+#brand small {
+    color: #aaa;
+    margin-left: 0.5em;
+    font-size: 0.6em;
 }
 
 a#brand:hover {
@@ -199,18 +204,22 @@ footer p {
     float: left;
 }
 
-.thumbnail {
+.portfolio .thumbnail {
     width: 165px;
     cursor: pointer;
 }
 
-.thumbnail img {   /* portfolio images */
+.portfolio .thumbnail img {   /* portfolio images */
     width: 165px;
     margin: 0px;
 }
 
-.thumbnail p {
+.portfolio .thumbnail p {
     text-align: center;
+}
+
+.clickables {
+    margin: 20px;
 }
 
 /* wide layout */
@@ -223,4 +232,23 @@ footer p {
     position: relative;
     z-index: 3;
 
+}
+
+/** be ***/
+
+body.blog_engine_body {
+    padding-top: 160px;
+    background-color: #fff !important;
+    background-image: none !important;
+}
+
+.blog_engine_body .label-info {
+    background: #a40000 !important;
+}
+
+
+.blog_engine_body .thumbnail {
+    margin: 20px 0;
+    display: inline-block;
+    max-width: 96%;
 }
