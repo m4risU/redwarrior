@@ -55,3 +55,5 @@ gem 'friendly_id'
 gem 'blog_engine', :git => "git@github.com:robert0x72/blog_engine.git"
 
 gem 'carrierwave'
+
+gem 'airbrake', '3.1.1'
