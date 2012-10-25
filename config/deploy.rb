@@ -39,7 +39,8 @@ end
 
 deploy.task :bundle do
   #run "cd #{release_path}; sudo bundle install --deployment" if there are git repos!
-  run "cd #{release_path}; bundle install --path /home/rails/.rvm/gems/ruby-1.9.3-p125@redwarrior"
+  #run "cd #{release_path}; bundle install --path /home/rails/.rvm/gems/ruby-1.9.3-p125@redwarrior"
+  run "cd #{release_path}; bundle update" #" --path /home/rails/.rvm/gems/ruby-1.9.3-p125@redwarrior"
 end
 
 deploy.task :restart, :roles => :app do

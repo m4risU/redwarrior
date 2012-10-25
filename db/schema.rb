@@ -93,4 +93,11 @@ ActiveRecord::Schema.define(:version => 20120911100349) do
 
   add_index "posts", ["slug"], :name => "index_posts_on_slug"
 
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.decimal  "price"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
 end

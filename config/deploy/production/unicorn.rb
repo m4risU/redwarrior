@@ -1,4 +1,5 @@
 APP_ROOT = "/home/rails/redwarrior/current"
+SOCKET_ROOT = "/home/rails/redwarrior"
 
 #if ENV['MY_RUBY_HOME'] && ENV['MY_RUBY_HOME'].include?('rvm')
 #  begin
@@ -22,9 +23,9 @@ preload_app true
 
 timeout 30
 
-listen APP_ROOT + "/tmp/sockets/unicorn.sock", :backlog => 64
+listen SOCKET_ROOT + "/unicorn.sock", :backlog => 64
 
-pid APP_ROOT + "/tmp/pids/unicorn.pid"
+pid SOCKET_ROOT + "/unicorn.pid"
 
 stderr_path APP_ROOT + "/log/unicorn.stderr.log"
 stdout_path APP_ROOT + "/log/unicorn.stdout.log"

@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:robert0x72/blog_engine.git
-  revision: 7dbd746e9a22a1316b188f43564c902334b92c59
+  revision: da04d47b91ed42b7d6e73e3017fa165d0e7a3abd
   specs:
     blog_engine (0.0.1)
       activeadmin
