@@ -12,8 +12,8 @@
 
 <div class="navbar navbar-fixed-top">
   <div id="brand-slogan">
-    <%= link_to root_path, :id => 'brand' do%>
-      <span class="red">Red</span>Warrior <small> Blog </small>
+    <%= link_to '/', :id => 'brand' do %>
+      <span class="red">Red</span>Warrior
     <% end %>
     <span id="slogan">apps, websites and startups</span>
   </div>
@@ -25,10 +25,28 @@
         <span class="icon-bar"></span>
       </a>
 
-      <ul class="nav" id="main-menu">
-        <li><%= link_to "back to Red Warrior", '/' %></li>
-      </ul>
-
+      <div class="container-fluid nav-collapse">
+        <ul class="nav" id="main-menu">
+          <li><%= link_to I18n.t("technologies"), Rails.application.routes.url_helpers.services_path %></li>
+          <li><%= link_to I18n.t("portfolio"), Rails.application.routes.url_helpers.portfolio_path %></li>
+          <li><%= link_to I18n.t("menu.contact"), Rails.application.routes.url_helpers.contact_path %></li>
+          <li><%= link_to "Blog", root_path %></li>
+        </ul>
+        <ul class="nav pull-right" id='lang-menu'>
+          <!--<li><a href="#">Link</a></li>-->
+          <!--<li class="divider-vertical"></li>-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t "current_locale_#{I18n.locale}" %>
+              <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><%= link_to I18n.t("current_locale_pl"), Rails.application.routes.url_helpers.locale_path(:locale => "pl") %></li>
+              <li><%= link_to I18n.t("current_locale_en"), Rails.application.routes.url_helpers.locale_path(:locale => "en") %></li>
+              <!--<li class="divider"></li>-->
+              <!--<li><a href="#">Separated link</a></li>-->
+            </ul>
+          </li>
+        </ul>
+      </div>
       <%#= render "layouts/shared/horizontal_menu" %>
       <!--/.nav-collapse -->
     </div>

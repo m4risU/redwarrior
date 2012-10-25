@@ -51,6 +51,7 @@ gem 'friendly_id'
 
 # blog_engine
 
-gem 'blog_engine', :path => "../blog_engine/"
+#gem 'blog_engine', :path => "../blog_engine/"
+gem 'blog_engine', :git => "git@github.com:robert0x72/blog_engine.git"
 
 gem 'carrierwave'
