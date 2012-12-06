@@ -35,6 +35,7 @@ end
 
 deploy.task :copy_yml_files do
   run "ln -s /home/rails/redwarrior/etc/config/database.yml /home/rails/redwarrior/current/config/database.yml"
+  run "ln -s /home/rails/wordpress_redwarrior /home/rails/redwarrior/current/public/blog"
 end
 
 deploy.task :bundle do
